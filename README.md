@@ -5,6 +5,9 @@ A browser-based audio editor that supports:
 - Drag-and-drop audio import.
 - Visual waveform rendering.
 - On-waveform trim handles for selecting start/end.
+- Importing an audio file.
+- Visual waveform rendering.
+- Start/end selection for trimming.
 - Undo for trim operations.
 - Zoom in/out on waveform detail.
 - Export to MP3 at 320 kbps.
@@ -20,3 +23,7 @@ Open `index.html` in a modern browser.
 3. Click **Trim Selection** to apply edits.
 4. Click **Undo** to restore the previous state.
 5. Click **Export MP3 320kb** to download the edited file.
+## Notes
+
+- Uses the Web Audio API for decoding/playback and waveform processing.
+- Uses `lamejs` from CDN for MP3 encoding.
